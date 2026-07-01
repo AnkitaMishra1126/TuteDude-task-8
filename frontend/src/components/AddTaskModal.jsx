@@ -74,21 +74,20 @@ const AddTaskModal = ({isOpen, onClose,onTaskAdded})=>{
                   </div>
                   <div className="flex justify-end gap-2">
                          <button
-              type="button"
-              onClick={onClose}
-              className="px-5 py-2 rounded-lg border border-gray-300 hover:bg-gray-100"
-            >
-              Cancel
-            </button>
-
-            <button
-              type="submit"
-              disabled={loading}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg"
-            >
-              {loading ? "Adding..." : "Add Task"}
-            </button>
-                  </div>
+                         type="button"
+                         onClick={onClose}
+                         className="px-5 py-2 rounded-lg border border-gray-300 hover:bg-gray-100"
+                         >
+                         Cancel
+                         </button>
+                         <button
+                         type="submit"
+                         disabled={loading}
+                         className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg"
+                         >
+                         {loading ? "Adding..." : "Add Task"}
+                         </button>
+                    </div>
                 </form>
             </div>
         </div>

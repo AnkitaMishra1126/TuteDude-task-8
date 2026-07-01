@@ -1,6 +1,7 @@
 import List from '../models/list.js';
 import User from '../models/user.js';
 
+//add list service
 const addListService = async (title, body, email) => {
 
 const existingUser = await User.findOne({ email });
@@ -15,7 +16,7 @@ const existingUser = await User.findOne({ email });
         
 }
 
-
+//update list service
 const updateListService = async (id, title, body, email, status) => {
     const existingUser = await User.findOne({ email });
         if(!existingUser){
@@ -28,6 +29,7 @@ const updateListService = async (id, title, body, email, status) => {
              return updatedList;
 }
 
+//delete list service
 const deleteListService = async (id, email) => {
  const existingUser = await User.findOneAndUpdate({ email }, {$pull: { list:id }});
         if(!existingUser){ 
@@ -37,7 +39,7 @@ const deleteListService = async (id, email) => {
          return deleteList;
         
 }
-
+//get list service
 const getListService = async (email) => {
      const existingUser = await User.findOne({ email });
         if(existingUser){
@@ -47,6 +49,7 @@ const getListService = async (email) => {
             throw new Error("User not found");
         }
 }
+//search list service
 const searchListService = async (keyword) => {
     const list = await List.find({
         title:{

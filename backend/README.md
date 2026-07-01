@@ -1,6 +1,6 @@
 ## Setup instructions
 1. Clone the repository
-  > git clone 
+  > git clone "https://github.com/AnkitaMishra1126/TuteDude-task-8/tree/main"
   > cd backend
 2. Install dependencies
   > npm i   OR npm install
@@ -21,7 +21,7 @@ PUT /api/v2/update-status/:id
 
 ## Environment variables
 MONGO_URI= "add your own MongoDB Atlas URI"
-PORT= 3000 OR anyother port as your need.
+PORT=  port number as your need.
 
 ## Challenges faced 
 1. Understanding MongoDB references between User and List.

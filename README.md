@@ -51,10 +51,18 @@ PUT /api/v2/update-status/:id
 
 
 ## ScreenShort
-- Register Page (<Screenshot 2026-07-01 160857.png>)
-- Login Page    (<Screenshot 2026-07-01 160921.png>)
-- Dashboard     
-- Add Task Model
-- Edit Task Model
-- Search Bar
-- Task Cards
+- Register Page <img width="1905" height="965" alt="Screenshot 2026-07-01 160857" src="https://github.com/user-attachments/assets/0f71fc6d-5639-46c5-9e58-0f6d011ecbd3" />
+
+- Login Page  
+<img width="1905" height="967" alt="Screenshot 2026-07-01 160921" src="https://github.com/user-attachments/assets/13ef0d92-30c6-48af-a5d2-d678462824b5" />
+
+- Dashboard    <img width="1852" height="967" alt="Screenshot 2026-07-01 160720" src="https://github.com/user-attachments/assets/061ceed2-be17-4f76-97b7-195f64f56822" />
+
+- Add Task Model  <img width="1828" height="911" alt="Screenshot 2026-07-01 160818" src="https://github.com/user-attachments/assets/1a7a333e-9c03-4d8c-919e-6f7d6b7d9fd5" />
+
+- Edit Task Model  <img width="1835" height="915" alt="Screenshot 2026-07-01 160751" src="https://github.com/user-attachments/assets/9d4d5f78-c1ad-4f4e-8ec1-f95d0d5bf538" />
+
+- Search Bar     <img width="1837" height="950" alt="Screenshot 2026-07-01 164149" src="https://github.com/user-attachments/assets/19229639-d739-4304-bd74-e7c8ab22f8d9" />
+
+- Task Cards     <img width="1853" height="907" alt="Screenshot 2026-07-01 164240" src="https://github.com/user-attachments/assets/7eb82ebf-7f26-4116-bb86-b26cbc1a9072" />
+

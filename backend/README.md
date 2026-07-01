@@ -1,7 +1,7 @@
 ## Setup instructions
 1. Clone the repository
-  > git clone "https://github.com/AnkitaMishra1126/TuteDude-task-8/tree/main"
-  > cd backend
+      > git clone "https://github.com/AnkitaMishra1126/TuteDude-task-8/tree/main"
+      > cd backend
 2. Install dependencies
   > npm i   OR npm install
 3. Configure MongoDB Atlas - Open connection/connection.js and replace the connection string with your own MongoDB Atlas URI:

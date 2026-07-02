@@ -14,14 +14,22 @@ const app = express();
 
 connectDB();
 
-app.use(cors());
+app.use(cors(
+  {
+    origin:[
+      "http://localhost:5173",
+      "https://famous-donut-f3c594.netlify.app/",
+    ],
+    credentials: true,
+  }
+));
 
 app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-app.use("/api/v2", auth);
+app.use("/api/v1", auth);
 app.use("/api/v2", list);
 
 // Error Handler

@@ -38,16 +38,16 @@ Backend URL: http://loaclhost:3000
 
 ## API Endpoints
 For authentication:
-  POST /api/v1/register
-  POST /api/v1/signin
+-POST /api/v1/register
+-POST /api/v1/signin
  
 For tasks: 
-POST /api/v2/addlist
-PUT /api/v2/updatelist/:id
-DELETE /api/v2/deletelist/:id
-GET /api/v2/getlist
-GET /api/v2/searchlist
-PUT /api/v2/update-status/:id
+-POST /api/v2/addlist
+-PUT /api/v2/updatelist/:id
+-DELETE /api/v2/deletelist/:id
+-GET /api/v2/getlist
+-GET /api/v2/searchlist
+-PUT /api/v2/update-status/:id
 
 ## Challenges Faced [Frontend]
 

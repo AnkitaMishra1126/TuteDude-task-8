@@ -20,34 +20,34 @@ Taskify is a modern To-Do list appliction build using **React**,**Vite**,and **T
 - react icons
 
 ## Installation 
-step.1 - //clone the repository
-           git clone ""
-step.2 - //navigate to the project
-          cd frontend
-step.3 - // install dependencies
-         npm i OR npm install
-step.4 - //start the server
-         npm run dev
-The application will run at:
+step 1. //clone the repository <br>
+           git clone "https://github.com/AnkitaMishra1126/TuteDude-task-8.git"<br>
+step 2. //navigate to the project <br>
+          cd frontend<br>
+step 3. // install dependencies<br>
+         npm i OR npm install<br>
+step 4. //start the server<br>
+         npm run dev<br>
+The application will run at: 
 http://localhost:5173/
 
 
 ## 🔗Backend
-Make sure the backend server is running before starting the frontend.
+Make sure the backend server is running before starting the frontend.<br>
 Backend URL: http://loaclhost:3000
 
 ## API Endpoints
-For authentication:
--POST /api/v1/register
--POST /api/v1/signin
+For authentication:<br>
+- POST /api/v1/register<br>
+- POST /api/v1/signin<br>
  
-For tasks: 
--POST /api/v2/addlist
--PUT /api/v2/updatelist/:id
--DELETE /api/v2/deletelist/:id
--GET /api/v2/getlist
--GET /api/v2/searchlist
--PUT /api/v2/update-status/:id
+For tasks: <br>
+- POST /api/v2/addlist<br>
+- PUT /api/v2/updatelist/:id<br>
+- DELETE /api/v2/deletelist/:id<br>
+- GET /api/v2/getlist<br>
+- GET /api/v2/searchlist<br>
+- PUT /api/v2/update-status/:id<br>
 
 ## Challenges Faced [Frontend]
 
@@ -55,14 +55,14 @@ For tasks:
 
 One of the main challenges I faced was implementing the search functionality. Initially, the search API was called on every keystroke. For example, when searching for **"Resume"**, the application sent multiple requests:
 
-
-R
-Re
-Res
-Resu
-Resum
-Resume
-
+<br>
+R  <br>
+Re <br>
+Res<br>
+Resu<br>
+Resum<br>
+Resume<br>
+<br>
 
 This caused multiple API calls, unnecessary re-rendering, and sometimes the task list became blank while typing because the UI was updating with each request.
 
@@ -97,9 +97,9 @@ Managing the logged-in user's information across different pages was another cha
 
 - Task Cards     <img width="1853" height="907" alt="Screenshot 2026-07-01 164240" src="https://github.com/user-attachments/assets/7eb82ebf-7f26-4116-bb86-b26cbc1a9072" />
 
--NotFound Page   <img width="1895" height="943" alt="Screenshot 2026-07-01 194904" src="https://github.com/user-attachments/assets/29dc5b9d-6ff9-42bc-a73f-6f9f899a1d2b" />
+- NotFound Page   <img width="1895" height="943" alt="Screenshot 2026-07-01 194904" src="https://github.com/user-attachments/assets/29dc5b9d-6ff9-42bc-a73f-6f9f899a1d2b" />
 
--EmptyState page  <img width="1905" height="917" alt="Screenshot 2026-07-01 195353" src="https://github.com/user-attachments/assets/6d5c2099-b5e6-4cb2-b4ee-24dc883e3114" />
+- EmptyState page  <img width="1905" height="917" alt="Screenshot 2026-07-01 195353" src="https://github.com/user-attachments/assets/6d5c2099-b5e6-4cb2-b4ee-24dc883e3114" />
 
 
 

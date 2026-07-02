@@ -1,7 +1,7 @@
 import axios from "axios";
   
 const api =  axios.create({
-  baseURL: "https://tutedude-task-8.onrender.com/api/v2",
+  baseURL: "https://tutedude-task-8.onrender.com",
   headers: {
     "Content-Type": "application/json",
   },

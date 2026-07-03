@@ -18,7 +18,7 @@ app.use(cors(
   {
     origin:[
       "http://localhost:5173",
-      "https://tutedude-task-8.netlify.app",
+      "https://famous-donut-f3c594.netlify.app",
     ],
     methods: ["GET", "POST", "PUT", "DELETE","OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization","id"],

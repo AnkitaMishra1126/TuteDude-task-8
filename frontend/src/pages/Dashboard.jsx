@@ -10,6 +10,9 @@ import EmptyState from '../components/EmptyState';
 import Loader from '../components/Loader';
 
 import {
+  addTask,
+  updateTask,
+  updateTaskStatus,
   getTasks,
   deleteTask,
   searchTask,
@@ -29,6 +32,7 @@ const Dashboard = () => {
   const [selectedTask, setSelectedTask] = useState(null);
 
   const fetchTasks= async()=>{
+    if (!user) return;
     try {
       const data = await getTasks(user.email);
       setTasks(data.list);
@@ -80,7 +84,15 @@ const Dashboard = () => {
     setShowEditModal(true);
   };
 
- 
+ const handleStatusChange=async( id, status) =>{
+  try{
+    const newStatus = status === "completed" ? "pending" : "completed";
+    await updateTaskStatus(id, newStatus, user.email);
+    fetchTasks();
+  }catch(err){
+    console.log(err);
+  }
+ }
   
   return(
     <div className='min-h-screen bg-gray-100'>
@@ -103,7 +115,7 @@ const Dashboard = () => {
       {!loading && tasks.length === 0 && (
         <EmptyState message="No tasks found"/>
       )}
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 p-8">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 p-8">
         {tasks.map((task) => (
           <div
           key={task._id}
@@ -124,6 +136,15 @@ const Dashboard = () => {
                 </span>
             </div>
             <div className="flex gap-3 mt-6">
+              <button 
+              onClick={() => handleStatusChange(task._id, task.status)}
+              className={`text-white px-4 py-2 rounded-lg ${
+               task.status === "completed"
+               ? "bg-yellow-500 hover:bg-yellow-600"
+               : "bg-blue-600 hover:bg-blue-700"
+               }`}>
+                {task.status === "completed" ? "Mark as Pending" : "Mark as Completed"}
+              </button>
               <button 
               className="bg-green-600 text-white px-4 py-2 rounded-lg"
               onClick={() => handleEdit(task)}

@@ -47,7 +47,8 @@ For tasks: <br>
 - DELETE /api/v2/deletelist/:id<br>
 - GET /api/v2/getlist<br>
 - GET /api/v2/searchlist<br>
-- PUT /api/v2/update-status/:id<br>
+- PUT /api/v2/update<img width="1903" height="921" alt="Screenshot 2026-07-05 192949" src="https://github.com/user-attachments/assets/7180f204-aa40-48cf-8c92-7c52eea20483" />
+status/:id<br>
 
 ## Challenges Faced [Frontend]
 
@@ -100,6 +101,44 @@ Managing the logged-in user's information across different pages was another cha
 - NotFound Page   <img width="1895" height="943" alt="Screenshot 2026-07-01 194904" src="https://github.com/user-attachments/assets/29dc5b9d-6ff9-42bc-a73f-6f9f899a1d2b" />
 
 - EmptyState page  <img width="1905" height="917" alt="Screenshot 2026-07-01 195353" src="https://github.com/user-attachments/assets/6d5c2099-b5e6-4cb2-b4ee-24dc883e3114" />
+## Deployment
+
+### Backend
+
+Deployed on **Render**
+
+Base URL:
+
+https://task-8-gkpe.onrender.com
+
+All API testing was performed using this deployed backend.
+
+### Frontend
+
+Deployed on **Netlify**
+
+Base URL:
+
+https://famous-donut-f3c594.netlify.app
 
 
+## API Testing
+All backend APIs were tested using **Postman** aganist the deployed Render backend to ensure they work correctly in a productive environment.
+
+##Testing Endpoints
+- POST /api/v1/register<br>   <img width="1427" height="880" alt="Screenshot 2026-07-05 193955" src="https://github.com/user-attachments/assets/801e11c1-934a-4f63-9b20-b41de1232f95" />
+
+- POST /api/v1/signin<br>    <img width="1438" height="922" alt="Screenshot 2026-07-05 194045" src="https://github.com/user-attachments/assets/9b8dc7b3-4f74-4097-b2b4-a0046e909478" />
+
+- POST /api/v2/addlist<br>  <img width="1903" height="921" alt="Screenshot 2026-07-05 192949" src="https://github.com/user-attachments/assets/d4098958-a112-4325-8a4b-659e8e9df7e6" />
+
+- PUT /api/v2/updatelist/:id<br> <img width="1442" height="930" alt="Screenshot 2026-07-05 193445" src="https://github.com/user-attachments/assets/8b3fe404-59bf-49d8-94a8-289e52375de2" />
+
+- DELETE /api/v2/deletelist/:id<br> <img width="1296" height="856" alt="Screenshot 2026-07-05 193808" src="https://github.com/user-attachments/assets/79d98a0f-6698-498d-b478-8d5f6c021dd4" />
+
+- GET /api/v2/getlist<br> <img width="1437" height="975" alt="Screenshot 2026-07-05 193559" src="https://github.com/user-attachments/assets/9419ffe1-2e85-4cc6-823d-5032d55ed43c" />
+
+- GET /api/v2/searchlist<br> <img width="1915" height="937" alt="Screenshot 2026-07-06 123829" src="https://github.com/user-attachments/assets/a205370c-82da-42a7-9b68-36fdc6037d45" />
+
+- PUT /api/v2/updatestatus/:id<br> <img width="1427" height="880" alt="Screenshot 2026-07-05 193955" src="https://github.com/user-attachments/assets/561bf957-05f5-4d0b-a098-747e3781eb64" />
 

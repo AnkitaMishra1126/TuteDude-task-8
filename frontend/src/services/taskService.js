@@ -20,8 +20,8 @@ export const deleteTask = async (id, email) => {
     return response.data;
 };
 //search task
-export const searchTask = async (keyword) => {
-    const response = await api.get( `/api/v2/searchlist?keyword=${keyword}`);
+export const searchTask = async (keyword , email) => {
+    const response = await api.get( `/api/v2/searchlist?keyword=${keyword}&email=${email}`);
     return response.data;
 };
 //update task status

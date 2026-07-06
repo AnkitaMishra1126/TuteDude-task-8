@@ -83,27 +83,7 @@ const EditTaskModal = ({
                         onChange={handleChange}
                         className='w-full border rounded-lg p-3 mt-2 outline-none resize-none'/>
                     </div>
-                    <div className="mb-5">
 
-    <label className="block mb-2 font-medium">
-        Status
-    </label>
-
-     <select
-        name="status"
-        value={formData.status}
-        onChange={handleChange}
-        className="w-full border rounded-lg p-3"
-     >
-        <option value="pending">
-            Pending
-        </option>
-        <option value="completed">
-            Completed
-        </option>
-    </select>
-
-</div>
                     <div className="flex justify-end gap-3">
                         <button 
                         type="button" 

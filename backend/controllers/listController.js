@@ -60,13 +60,13 @@ const getList = async (req, res, next) => {
 //search list
 const searchList = async (req, res,next) => {
    try{
-    const {keyword} = req.query;
-    if (!keyword) {
+    const {keyword,email} = req.query;
+    if (!keyword || !email) {
     return res.status(400).json({
-        message: "Keyword is required"
+        message: "Keyword and email required"
     });
 }
-    const list = await searchListService(keyword);
+    const list = await searchListService(keyword,email);
     res.status(200).json(list);
     
    }catch(err){

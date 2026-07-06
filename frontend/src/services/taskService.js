@@ -24,3 +24,13 @@ export const searchTask = async (keyword) => {
     const response = await api.get( `/api/v2/searchlist?keyword=${keyword}`);
     return response.data;
 };
+//update task status
+export const updateTaskStatus = async (id, status,email) => {
+    const response = await api.put(`/api/v2/updatestatus/${id}`,
+    {
+    status,
+    email
+    }
+    );
+    return response.data;
+};

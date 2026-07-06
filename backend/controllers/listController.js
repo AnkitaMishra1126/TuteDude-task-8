@@ -1,13 +1,14 @@
 import {
        addListService , 
        updateListService, 
+       updateStatusService,
        deleteListService,
        getListService, 
        searchListService
        } from '../services/listServices.js';
 
 //add list
-const addList =  async (req, res) => {
+const addList =  async (req, res ,next) => {
     try{
         const {title, body, email} = req.body;
         if(!title || !body || !email){
@@ -22,7 +23,7 @@ const addList =  async (req, res) => {
     }
 };
 // update list
-const updateList =   async (req, res) => {
+const updateList =   async (req, res,next) => {
     try{
         const {title, body , email, status} = req.body;
         const {id} = req.params;
@@ -34,7 +35,7 @@ const updateList =   async (req, res) => {
 };
 
 // delete list
-const deleteList = async (req, res) => {
+const deleteList = async (req, res, next) => {
     try{
         const email = req.query.email;
         const {id} = req.params;
@@ -47,7 +48,7 @@ const deleteList = async (req, res) => {
 
 
 //getting list 
-const getList = async (req, res) => {
+const getList = async (req, res, next) => {
     try{
         const email = req.query.email;    
         const list = await getListService(email);
@@ -57,7 +58,7 @@ const getList = async (req, res) => {
     }
 };
 //search list
-const searchList = async (req, res) => {
+const searchList = async (req, res,next) => {
    try{
     const {keyword} = req.query;
     if (!keyword) {
@@ -72,5 +73,20 @@ const searchList = async (req, res) => {
         next(err);
     }
 }
-
-export { addList, updateList, deleteList, getList, searchList };
+//update status of task
+const updateStatus = async (req, res,next) => {
+    try{
+        const {status, email} = req.body;
+        const {id} = req.params;
+        if(!status || !email){
+            return res.status(400).json({
+                message: "Status and email are required"
+            });
+        }
+        const task = await updateStatusService(id, status, email);
+        res.status(200).json({ message: "Status updated successfully", task });
+    }catch(err){
+        next(err);
+    }
+}
+export { addList, updateList, deleteList, getList, searchList , updateStatus };

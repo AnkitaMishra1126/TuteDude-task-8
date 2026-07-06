@@ -87,15 +87,15 @@ Managing the logged-in user's information across different pages was another cha
 - Login Page  
 <img width="1905" height="967" alt="Screenshot 2026-07-01 160921" src="https://github.com/user-attachments/assets/13ef0d92-30c6-48af-a5d2-d678462824b5" />
 
-- Dashboard    <img width="1852" height="967" alt="Screenshot 2026-07-01 160720" src="https://github.com/user-attachments/assets/061ceed2-be17-4f76-97b7-195f64f56822" />
+- Dashboard   <img width="1898" height="988" alt="Screenshot 2026-07-06 214812" src="https://github.com/user-attachments/assets/ef765bdc-c559-4c3b-9544-f5a98304835b" />
 
-- Add Task Model  <img width="1828" height="911" alt="Screenshot 2026-07-01 160818" src="https://github.com/user-attachments/assets/1a7a333e-9c03-4d8c-919e-6f7d6b7d9fd5" />
+- Add Task Model  <img width="1880" height="910" alt="Screenshot 2026-07-06 215033" src="https://github.com/user-attachments/assets/0dd04308-48eb-473c-aaac-22218b9eeb0e" />
 
-- Edit Task Model  <img width="1835" height="915" alt="Screenshot 2026-07-01 160751" src="https://github.com/user-attachments/assets/9d4d5f78-c1ad-4f4e-8ec1-f95d0d5bf538" />
+- Edit Task Model  <img width="1892" height="918" alt="Screenshot 2026-07-06 214420" src="https://github.com/user-attachments/assets/88a7c5e7-6bfd-4c90-90db-63819dd53def" />
 
-- Search Bar     <img width="1837" height="950" alt="Screenshot 2026-07-01 164149" src="https://github.com/user-attachments/assets/19229639-d739-4304-bd74-e7c8ab22f8d9" />
+- Search Bar     <img width="1896" height="960" alt="Screenshot 2026-07-06 214554" src="https://github.com/user-attachments/assets/a574e8e0-157a-4962-ad66-b3d305ac209d" />
 
-- Task Cards     <img width="1853" height="907" alt="Screenshot 2026-07-01 164240" src="https://github.com/user-attachments/assets/7eb82ebf-7f26-4116-bb86-b26cbc1a9072" />
+- Task Cards    <img width="1763" height="857" alt="Screenshot 2026-07-06 214402" src="https://github.com/user-attachments/assets/13c663ee-c6f5-4f89-a234-afd6623fc329" />
 
 - NotFound Page   <img width="1895" height="943" alt="Screenshot 2026-07-01 194904" src="https://github.com/user-attachments/assets/29dc5b9d-6ff9-42bc-a73f-6f9f899a1d2b" />
 
@@ -114,11 +114,11 @@ All API testing was performed using this deployed backend.
 
 ### Frontend
 
-Deployed on **Netlify**
+Deployed on **Vercel**
 
 Base URL:
 
-https://famous-donut-f3c594.netlify.app
+https://tute-dude-task-8.vercel.app
 
 
 ## API Testing

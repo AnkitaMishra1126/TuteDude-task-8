@@ -59,9 +59,28 @@ const searchListService = async (keyword) => {
     });
     return list;
 }
+
+//update status of any task 
+const updateStatusService = async (id, status , email) => {
+    const existingUser = await User.findOne({ email });
+        if(!existingUser){
+            throw new Error("User not found");
+        }
+        const updatedList=await List.findByIdAndUpdate(
+            id,
+            { status },
+            { new: true }
+        );
+        if(!updatedList){
+            throw new Error("task not found");
+        }
+        return updatedList;
+}
+
 export {
     addListService,
-    updateListService,      
+    updateListService,
+    updateStatusService,
     deleteListService,
     getListService,
     searchListService

@@ -47,8 +47,7 @@ For tasks: <br>
 - DELETE /api/v2/deletelist/:id<br>
 - GET /api/v2/getlist<br>
 - GET /api/v2/searchlist<br>
-- PUT /api/v2/update<img width="1903" height="921" alt="Screenshot 2026-07-05 192949" src="https://github.com/user-attachments/assets/7180f204-aa40-48cf-8c92-7c52eea20483" />
-status/:id<br>
+- PUT /api/v2/updatestatus/:id<br>
 
 ## Challenges Faced [Frontend]
 
@@ -140,5 +139,6 @@ All backend APIs were tested using **Postman** aganist the deployed Render backe
 
 - GET /api/v2/searchlist<br> <img width="1915" height="937" alt="Screenshot 2026-07-06 123829" src="https://github.com/user-attachments/assets/a205370c-82da-42a7-9b68-36fdc6037d45" />
 
-- PUT /api/v2/updatestatus/:id<br> <img width="1427" height="880" alt="Screenshot 2026-07-05 193955" src="https://github.com/user-attachments/assets/561bf957-05f5-4d0b-a098-747e3781eb64" />
+- PUT /api/v2/updatestatus/:id<br><img width="1847" height="1072" alt="Screenshot 2026-07-06 122116" src="https://github.com/user-attachments/assets/94838fe6-0e71-43de-8680-d00d549f7653" />
+
 

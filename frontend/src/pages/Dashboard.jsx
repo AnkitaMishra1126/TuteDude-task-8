@@ -57,7 +57,7 @@ const Dashboard = () => {
       return;
     }
     try {
-      const data = await searchTask(search);
+      const data = await searchTask(search , user.email);
       setTasks(data);
     } catch (err) {
       console.log(err);

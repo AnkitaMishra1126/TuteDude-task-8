@@ -50,8 +50,13 @@ const getListService = async (email) => {
         }
 }
 //search list service
-const searchListService = async (keyword) => {
+const searchListService = async (keyword,email) => {
+    const existingUser = await User.findOne({ email });
+        if(!existingUser){
+            throw new Error("User not found");
+        }
     const list = await List.find({
+        user: existingUser._id,
         title:{
             $regex: keyword,
             $options: 'i'
